@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  node13-estargz-fn:
+    lang: node13-estargz
+    handler: ./node13-estargz-fn
+    image: estargz.kontain.me/felipecruz/node13-estargz-fn:latest
