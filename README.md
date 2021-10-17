@@ -29,8 +29,8 @@ echo -n $PASSWORD | faas-cli login --username admin --password-stdin
 faas-cli template pull https://github.com/felipecruz91/templates
 
 faas-cli new node13-estargz-fn --lang node13-estargz
-sed -i '' 's/node13-fn:latest/felipecruz\/node13-fn:latest/g' node13-fn.yml
-faas-cli up -f node13-fn.yml
+sed -i '' 's/node13-fn:latest/felipecruz\/node13-fn:latest/g' node13-estargz-fn.yml
+faas-cli up -f node13-estargz-fn.yml
 
 # Convert pushed image into eStargz on the registry-side, using estargz.kontain.me.
 
