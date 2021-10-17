@@ -3,11 +3,12 @@
 Image size comparison:
 
 ```
-felipecruz/node13-fn                                         latest                                                  43ff022f9166   About an hour ago   961MB
+felipecruz/node13-fn latest 43ff022f9166 About an hour ago 961MB
 
-estargz.kontain.me/felipecruz/node13-estargz-fn              latest                                                  bbbee27d75de   2 hours ago         974MB
+estargz.kontain.me/felipecruz/node13-estargz-fn latest bbbee27d75de 2 hours ago 974MB
 ```
 
+```
 kind create cluster --name stargz-demo --image ghcr.io/stargz-containers/estargz-kind-node:0.7.0
 arkade install openfaas
 
@@ -55,6 +56,8 @@ time curl http://127.0.0.1:8080/function/node13-fn
 ```
 
 kind delete cluster --name stargz-demo
+
+```
 
 ```
 
